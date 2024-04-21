@@ -7,6 +7,7 @@ import sqlalchemy
 from sqlalchemy import Column, String
 from sqlalchemy.orm import relationship
 
+storage_engine = environ.get("HBNB_TYPE_STORAGE")
 
 class User(BaseModel, Base):
     """Representation of a user """
