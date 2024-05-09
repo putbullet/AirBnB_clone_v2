@@ -33,8 +33,8 @@ def py_text(text="is cool"):
     return "Python {}".format(text)
 
 @app.route('/number/<int:n>', strict_slashes=False)
-def n_isnum(n):
-    """returns n is a number if it is int"""
+def number(n):
+    """Displays 'n is a number' if it is int"""
     return "{} is a number".format(n)
 
 
